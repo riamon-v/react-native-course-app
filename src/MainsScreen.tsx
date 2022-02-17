@@ -9,7 +9,6 @@ import {
 import _ from "lodash";
 import config from "./screens";
 import { DefaultTheme, useNavigation } from "@react-navigation/native";
-import { Colors } from "react-native/Libraries/NewAppScreen";
 
 const sections = _.map(config.navigationData, (section, key) => {
   return {

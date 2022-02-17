@@ -7,6 +7,7 @@ import {
   TouchableOpacity,
   View,
 } from "react-native";
+import config from "../index";
 
 interface HelloProps {
   name: string;
@@ -104,18 +105,18 @@ class MyButtonClass extends React.Component<MyButtonProps, any> {
 
 const Exo1: React.FC<any> = (props) => {
   return (
-    <ScrollView contentContainerStyle={{ padding: 12 }}>
-      <Text style={styles.title}>1.1 --- </Text>
+    <ScrollView contentContainerStyle={config.commonStyle.container}>
+      <Text style={config.commonStyle.title}>1.1 --- </Text>
       <Hello name="Vincent" />
       <Hello name="José" />
 
-      <Text style={styles.title}>1.2 --- </Text>
+      <Text style={config.commonStyle.title}>1.2 --- </Text>
       <Hello2 name="Vincent">Je suis développeur React-Native</Hello2>
-      <Text style={styles.title}>1.3 --- </Text>
+      <Text style={config.commonStyle.title}>1.3 --- </Text>
       <Hello3 name="Vincent" age={42} city="Roanne">
         Je suis développeur React-Native
       </Hello3>
-      <Text style={styles.title}>1.4 --- </Text>
+      <Text style={config.commonStyle.title}>1.4 --- </Text>
       <MyButton
         onPress={() => Alert.alert("Dire bonsoir")}
         label="Dire Bonsoir"
@@ -123,17 +124,17 @@ const Exo1: React.FC<any> = (props) => {
       <View
         style={{ backgroundColor: "black", height: 5, marginVertical: 30 }}
       />
-      <Text style={styles.title}>1.1 class --- </Text>
+      <Text style={config.commonStyle.title}>1.1 class --- </Text>
       <HelloClass name="Vincent" />
       <HelloClass name="José" />
 
-      <Text style={styles.title}>1.2 class --- </Text>
+      <Text style={config.commonStyle.title}>1.2 class --- </Text>
       <Hello2Class name="Vincent">Je suis développeur React-Native</Hello2Class>
-      <Text style={styles.title}>1.3 class --- </Text>
+      <Text style={config.commonStyle.title}>1.3 class --- </Text>
       <Hello3Class name="Vincent" age={42} city="Roanne">
         Je suis développeur React-Native
       </Hello3Class>
-      <Text style={styles.title}>1.4 class --- </Text>
+      <Text style={config.commonStyle.title}>1.4 class --- </Text>
       <MyButtonClass
         onPress={() => Alert.alert("Dire bonsoir")}
         label="Dire Bonsoir"

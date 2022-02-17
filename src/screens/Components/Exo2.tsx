@@ -1,12 +1,6 @@
 import React from "react";
-import {
-  Alert,
-  ScrollView,
-  StyleSheet,
-  Text,
-  TouchableOpacity,
-  View,
-} from "react-native";
+import { ScrollView, StyleSheet, Text, View } from "react-native";
+import config from "../index";
 
 interface HelloProps {
   name: string;
@@ -166,20 +160,20 @@ const HelloFlex2: React.FC<HelloProps> = (props) => {
 
 const Exo2: React.FC<any> = (props) => {
   return (
-    <ScrollView contentContainerStyle={{ padding: 12 }}>
-      <Text style={styles.title}>2.1 --- </Text>
+    <ScrollView contentContainerStyle={config.commonStyle.container}>
+      <Text style={config.commonStyle.title}>2.1 --- </Text>
       <Hello name="Vincent" age={42} city="Roanne">
         Je suis développeur React-Native
       </Hello>
-      <Text style={styles.title}>2.2 --- </Text>
+      <Text style={config.commonStyle.title}>2.2 --- </Text>
       <HelloStyle name="Vincent" age={42} city="Roanne">
         Je suis développeur React-Native
       </HelloStyle>
-      <Text style={styles.title}>2.3 --- </Text>
+      <Text style={config.commonStyle.title}>2.3 --- </Text>
       <HelloFlex name="Vincent" age={42} city="Roanne">
         Je suis développeur React-Native
       </HelloFlex>
-      <Text style={styles.title}>2.4 --- </Text>
+      <Text style={config.commonStyle.title}>2.4 --- </Text>
       <HelloFlex2 name="Vincent" age={42} city="Roanne">
         Je suis développeur React-Native
       </HelloFlex2>
