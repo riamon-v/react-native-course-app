@@ -35,13 +35,13 @@ const CustomInput2: React.FC<any> = (props) => {
       <View style={{ flexDirection: "row" }}>
         <Text
           onPress={() => setFontSize((f) => f + 1)}
-          style={{ marginRight: 8, fontWeight: "bold", fontSize }}
+          style={{ marginRight: 8, fontWeight: "bold", fontSize: fontSize + 5 }}
         >
           +
         </Text>
         <Text
           onPress={() => setFontSize((f) => f - 1)}
-          style={{ fontWeight: "bold", fontSize }}
+          style={{ fontWeight: "bold", fontSize: fontSize + 5 }}
         >
           -
         </Text>
@@ -82,14 +82,14 @@ const CustomInput3: React.FC<any> = () => {
           style={{
             marginRight: 8,
             fontWeight: "bold",
-            fontSize: state.fontSize,
+            fontSize: state.fontSize + 5,
           }}
         >
           +
         </Text>
         <Text
           onPress={() => handleSetState("fontSize", state.fontSize - 1)}
-          style={{ fontWeight: "bold", fontSize: state.fontSize }}
+          style={{ fontWeight: "bold", fontSize: state.fontSize + 5 }}
         >
           -
         </Text>

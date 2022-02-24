@@ -49,6 +49,14 @@ export default {
           { title: "Navigators Exo 2.3", screen: "Exo7NavigationScreen" },
         ],
       },
+      "Exos Async": {
+        title: "Async exercices",
+        screens: [
+          { title: "Promises", screen: "Exo1AsyncScreen" },
+          { title: "Axios", screen: "Exo2AsyncScreen" },
+          { title: "Fake POST method", screen: "Exo3AsyncScreen" },
+        ],
+      },
     };
   },
   get screens() {
@@ -100,6 +108,15 @@ export default {
       },
       get Exo7NavigationScreen() {
         return require("./Navigation/Exo2").Exo3;
+      },
+      get Exo1AsyncScreen() {
+        return require("./Async/Exo1").default;
+      },
+      get Exo2AsyncScreen() {
+        return require("./Async/Exo2").default;
+      },
+      get Exo3AsyncScreen() {
+        return require("./Async/Exo3").default;
       },
     };
   },
