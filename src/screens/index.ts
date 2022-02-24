@@ -36,9 +36,18 @@ export default {
           { title: "customHook", screen: "Exo3HooksScreen" },
         ],
       },
-      Tests: {
-        title: "Tests",
-        screens: [{ title: "SectionHeader", screen: "SectionHeaderScreen" }],
+      "Exos Navigation": {
+        title: "Navigation exercices",
+        screens: [
+          { title: "Context & AsyncStorage", screen: "Exo0NavigationScreen" },
+          { title: "Navigators Exo 1.1", screen: "Exo1NavigationScreen" },
+          { title: "Navigators Exo 1.2", screen: "Exo2NavigationScreen" },
+          { title: "Navigators Exo 1.3", screen: "Exo3NavigationScreen" },
+          { title: "Navigators Exo 1.4", screen: "Exo4NavigationScreen" },
+          { title: "Navigators Exo 2.1", screen: "Exo5NavigationScreen" },
+          { title: "Navigators Exo 2.2", screen: "Exo6NavigationScreen" },
+          { title: "Navigators Exo 2.3", screen: "Exo7NavigationScreen" },
+        ],
       },
     };
   },
@@ -67,6 +76,30 @@ export default {
       },
       get Exo3HooksScreen() {
         return require("./Hooks/Exo3").default;
+      },
+      get Exo0NavigationScreen() {
+        return require("./Navigation/Exo0").default;
+      },
+      get Exo1NavigationScreen() {
+        return require("./Navigation/Exo1").Exo1;
+      },
+      get Exo2NavigationScreen() {
+        return require("./Navigation/Exo1").Exo2;
+      },
+      get Exo3NavigationScreen() {
+        return require("./Navigation/Exo1").Exo3("3");
+      },
+      get Exo4NavigationScreen() {
+        return require("./Navigation/Exo1").Exo3("4");
+      },
+      get Exo5NavigationScreen() {
+        return require("./Navigation/Exo2").Exo1;
+      },
+      get Exo6NavigationScreen() {
+        return require("./Navigation/Exo2").Exo2;
+      },
+      get Exo7NavigationScreen() {
+        return require("./Navigation/Exo2").Exo3;
       },
     };
   },

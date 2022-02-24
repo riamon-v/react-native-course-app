@@ -2,7 +2,7 @@ import React from "react";
 import { Alert, ScrollView, Text, View } from "react-native";
 import { TextInput } from "react-native-gesture-handler";
 import { Ionicons } from "@expo/vector-icons";
-import config from "../";
+import config from "../index";
 
 const useMyTextInput = (initialValue: string, callback?: () => null) => {
   const [state, setState] = React.useState({

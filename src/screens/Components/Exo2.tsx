@@ -97,7 +97,7 @@ const HelloFlex: React.FC<HelloProps> = (props) => {
   );
 };
 
-const HelloFlex2: React.FC<HelloProps> = (props) => {
+export const HelloFlex2: React.FC<HelloProps> = (props) => {
   return (
     <View style={styles.container}>
       <Text style={styles.subtitle}>Bonjour à tous</Text>
