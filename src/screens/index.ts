@@ -47,6 +47,10 @@ export default {
           { title: "Navigators Exo 2.1", screen: "Exo5NavigationScreen" },
           { title: "Navigators Exo 2.2", screen: "Exo6NavigationScreen" },
           { title: "Navigators Exo 2.3", screen: "Exo7NavigationScreen" },
+          {
+            title: "Final Mix Navigation + API",
+            screen: "Exo4MixNavigationAPI",
+          },
         ],
       },
       "Exos Async": {
@@ -117,6 +121,9 @@ export default {
       },
       get Exo3AsyncScreen() {
         return require("./Async/Exo3").default;
+      },
+      get Exo4MixNavigationAPIScreen() {
+        return require("./Navigation/Exo4Mix").default;
       },
     };
   },
